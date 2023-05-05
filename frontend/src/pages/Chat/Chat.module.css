@@ -1,0 +1,36 @@
+.chatPage, .content {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: calc(var(--unit) * 38) 1fr;
+}
+
+.menu {
+    background: var(--primary-color);
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 2;
+    overflow-y: scroll;
+}
+
+.sendOptions {
+    display: flex;
+}
+
+.input {
+    flex: 2;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
