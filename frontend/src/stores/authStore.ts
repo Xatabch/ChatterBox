@@ -1,7 +1,8 @@
 import { makeAutoObservable } from 'mobx';
 
 export default class AuthStore {
-    isAuthenticated: boolean = false;
+    user: { id: string, name: string } = { id: '0', name: '' };
+    isAuthenticated = false;
     token: string | null = null;
 
     constructor() {
